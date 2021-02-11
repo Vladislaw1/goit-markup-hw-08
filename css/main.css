@@ -67,7 +67,7 @@ li {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -577,18 +577,17 @@ li {
 }
 
 .hero {
-  max-width: 1600px;
-  max-height: 600px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero.jpg");
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/foto/img_bg/hero_bg-mobile.jpg);
   background-size: cover;
 }
 
 .hero-div {
-  width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -598,20 +597,56 @@ li {
   font-style: normal;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/foto/img_bg/hero_bg-mobile-webp@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
-  max-width: 768;
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/foto/img_bg/hero_bg-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/foto/img_bg/hero_bg-tablet-webp@2x.webp");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/foto/img_bg/hero_bg-desktop.jpg");
+  }
+  .hero-div {
+    max-width: 698px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/foto/img_bg/hero_bg-desktop@2x.jpg");
+  }
 }
 
 .feature-list {
-  display: flex;
-  margin-right: -30px;
+  margin-top: -30px;
 }
 
 .feature-list .title {
@@ -635,14 +670,14 @@ li {
 }
 
 .feature-list-item {
-  margin-right: 30px;
+  margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
 }
 
 .feature-list-item::before {
   display: block;
   content: '';
-  width: 100%;
+  max-width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   background-repeat: no-repeat;
@@ -666,44 +701,36 @@ li {
   background-image: url(../img/icon-feature/astronaut.svg);
 }
 
-.work-team {
-  margin-left: -30px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .feature-list-item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
 }
 
-.work-team .work-team-item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3);
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: -30px;
+  }
+  .feature-list-item {
+    margin-top: 0;
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
-.box-text-work {
-  position: relative;
-}
-
-.box-text-work::before {
-  content: '';
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-}
-
-.text-work-img {
-  position: absolute;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  width: 100%;
-  color: #ffffff;
-  padding: 27px 13px;
-  bottom: 0;
+.work {
+  display: none;
 }
 
 .team-list {
