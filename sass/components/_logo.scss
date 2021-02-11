@@ -1,0 +1,35 @@
+.header{
+    & .logo {
+        color: #000000;
+        font-family: $fontTextLogo;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.193;
+        letter-spacing: 0.03em;
+      
+        text-decoration: none;
+        display: flex;
+
+        margin-right: 93px;
+      }
+}
+ .footer {
+
+    & .logo {
+        color: #ffffff;
+        font-family: $fontTextLogo;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.193;
+        letter-spacing: 0.03em;
+        
+        text-decoration: none;
+        display: flex;
+        
+        margin-right: 0;
+ }
+} 
+
+.logo-web {
+    color:$secondaryColor;
+  }

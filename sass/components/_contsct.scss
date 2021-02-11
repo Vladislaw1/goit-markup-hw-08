@@ -1,0 +1,107 @@
+  /*=====================================NAV-CONTACT===================================*/
+  
+  .nav-contact {
+    display: flex;
+    align-items: center;
+
+    &-item {
+        margin-left: 50px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        
+        &:first-child {
+            margin-left: 0px;
+          }
+      }
+
+     & .mail-link,
+     & .tel-link {
+        color: $paragraphColor;
+        font-size: 14px;
+        font-family: $fontTextTitle;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+      
+        text-decoration: none;
+      
+        display: flex;
+        align-items: center;
+      
+        transition: color 250ms $cubik;
+
+        &:hover,
+        &:focus {
+            color: $secondaryColor;
+            font-size: 14px;
+            font-family: $fontTextTitle;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+          
+            text-decoration: none;
+
+            & .icon-header-tel {
+                fill: currentColor;
+              }
+            & .icon-header-mail {
+                fill: currentColor;
+              }
+          }
+      }  
+  }
+
+
+  .icon-header-mail {
+    flex-shrink: 0;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $paragraphColor;
+  }
+  .icon-header-tel {
+    flex-shrink: 0;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $paragraphColor;
+  }
+
+.footer {
+    
+    & .addres {
+        color: #ffffff;
+      
+        font-family: $fontTextTitle;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+      
+        line-height: 1.4;
+        letter-spacing: 0.03em;
+      
+        text-decoration: none;
+      }
+      & .mail,
+      & .tel {
+        color: rgba(255, 255, 255, 0.6);
+      
+        font-family:$fontTextTitle;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+      
+        text-decoration: none;
+      
+        transition: color 250ms $cubik;
+
+
+        &:hover,
+        &:focus {
+        color: $secondaryColor;
+        }
+      }
+ 
+}

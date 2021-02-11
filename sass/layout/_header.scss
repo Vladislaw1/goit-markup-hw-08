@@ -1,0 +1,14 @@
+  .header {
+    padding: 24px 0;
+    border-bottom: 1px solid #ececec;
+  
+    & .container {
+        display: flex;
+      }
+}
+  .nav {
+    margin-right: auto;
+    display: flex;
+  }
+  
+
