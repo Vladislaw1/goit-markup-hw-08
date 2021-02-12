@@ -34,10 +34,14 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-  
-    margin-bottom: 50px;
-  
+    margin-bottom: 30px;
     text-align: center;
+
+    .footer &{ 
+    @media  screen and (max-width:1199px) {
+      text-align: center;
+    }
+  }
   } 
   
   

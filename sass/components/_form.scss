@@ -131,11 +131,11 @@
   }
 
 .form-footer {
-    display: flex;
-    margin-top: 20px;
-
+  margin-top: 20px;
+    
     & .email-footer {
-        flex-grow: 1;
+        width: 100%;
+        max-width: 480px;
         height: 50px;
         background-color: #2f303a;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -146,6 +146,7 @@
         padding-left: 15px;
         color: #ffffff;
         transition: border 250ms $cubik;
+        margin-right: 12px;
 
         &:focus {
             border: 1px solid #2196f3;
@@ -154,6 +155,11 @@
         &::placeholder{
           font-family: $fontTextTitle;
         }
+      }
+
+      @media  screen and (min-width:1200px){
+        display: flex;
+        margin-top: 20px;
       }
   }
 

@@ -6,14 +6,16 @@
 
 .work-team {
     margin-right: -30px;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+
+    .work-team-item {
+      margin-right: 30px;
+      flex-basis: calc((100%- 90px) / 3);
+    }
   }
-.work-team-item {
-    margin-right: 30px;
-    flex-basis: calc(100% / 3 - 30px);
-  }
+
 
   .box-text-work {
     position: relative;
