@@ -1,21 +1,20 @@
-@media screen and (max-width:1199px){
-  .work{
+.work{
+  @media screen and (max-width:1199px) {
     display: none;
   }
 }
 
 .work-team {
-    margin-right: -30px;
-    display: flex;
+    margin-left: -30px;
     justify-content: center;
+    display: flex;
     flex-wrap: wrap;
 
-    .work-team-item {
-      margin-right: 30px;
-      flex-basis: calc((100%- 90px) / 3);
-    }
+    & .work-team-item {
+        margin-left: 30px;
+        flex-basis: calc((100% - 90px) / 3);
+      }
   }
-
 
   .box-text-work {
     position: relative;

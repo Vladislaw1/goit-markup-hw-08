@@ -20,13 +20,3 @@ infinite- зацикливает анимацию
 
 pattern"[0-9]{3} - [0-9]{3} - [0-9]{2} - [0-9]{2}" value - обязательный для radio and checkbox ,даёт значение кнопк
 multipel для селект даёт возможость выбрать множество из множеств
-
-
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width:320px),
-  screen and (min-resolution: 192dpi) and (min-width:320px),
-  screen and (min-resolution: 2dppx) and (min-width:320px){
-  .box {
-    background-image: url('photo@2x.png');
-  }
-}

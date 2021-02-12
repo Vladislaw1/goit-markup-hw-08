@@ -37,7 +37,7 @@
   .telephone{
       &.input {
     position: relative;
-    width: 448px;
+    width: 100%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -55,7 +55,7 @@
   .textarea {
     resize: none;
     padding: 12px 16px;
-    width: 448px;
+    width: 100%;
     height: 120px;
   
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -131,11 +131,11 @@
   }
 
 .form-footer {
-  margin-top: 20px;
-    
+    display: flex;
+    margin-top: 20px;
+
     & .email-footer {
-        width: 100%;
-        max-width: 480px;
+        flex-grow: 1;
         height: 50px;
         background-color: #2f303a;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -146,7 +146,6 @@
         padding-left: 15px;
         color: #ffffff;
         transition: border 250ms $cubik;
-        margin-right: 12px;
 
         &:focus {
             border: 1px solid #2196f3;
@@ -155,11 +154,17 @@
         &::placeholder{
           font-family: $fontTextTitle;
         }
+        @media screen and (max-width:767px) {
+          width: 100%;
+        }
+        
+        @media screen and(min-width:768px) {
+          width: 450px;
+        }
       }
 
-      @media  screen and (min-width:1200px){
-        display: flex;
-        margin-top: 20px;
+      @media screen and (max-width:1199px) {
+        display: block;
       }
   }
 
