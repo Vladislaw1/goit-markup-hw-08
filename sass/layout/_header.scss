@@ -12,6 +12,12 @@
     @media screen and(min-width:768px) and(max-width:1199px){
       padding: 21px 0;
     } 
+
+    &.menu-burger{
+      @media screen and(min-width:768px) {
+        display: none;
+      }
+    }
 }
   .nav {
     margin-right: auto;
