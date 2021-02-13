@@ -1,10 +1,10 @@
-.menu-burger{
+.menu-burger.is-menu-hidden{
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
 
-.menu-burger .is-open {
+.menu-burger.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -30,7 +30,8 @@
     padding-left: 40px;
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
     overflow: scroll;
-  
+    z-index: 100;
     transform: translateY(0%) translateX(-50%);
     transition: transform 500ms linear, box-shadow 500ms linear 500ms;
   }
+ 
