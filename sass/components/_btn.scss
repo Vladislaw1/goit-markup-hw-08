@@ -43,6 +43,7 @@
 .icon-footer-button {
   fill: #ffffff;
 }
+
 .text-button-footer {
   margin-right: 10px;
 }
@@ -79,9 +80,7 @@
 // ==================BURGER========================
 .burger-menu{
   border: none;
-  background: transparent;
-
-  
+  background: transparent;   
 
   &:focus{
     outline: none;
@@ -97,4 +96,10 @@
     fill: $secondaryColor;
 }
 }
-
+.close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+}
