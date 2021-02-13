@@ -1,19 +1,32 @@
   /*=====================================NAV-CONTACT===================================*/
   
   .nav-contact {
-
     @media screen and(max-width:767px) {
-      display: none;
+    display: none;
     }
-
+    
     display: flex;
     align-items: center;
+
+    @media screen and(min-width:768px) and (max-width:1199px) {
+      margin-left: 84px;
+      display: block;
+     }
 
     &-item {
         margin-left: 50px;
         padding-top: 2px;
         padding-bottom: 2px;
         
+        @media screen and(min-width:768px) and(max-width:1199px) {
+          margin-left: 0;
+          
+
+          &:nth-child(2){
+            margin-top: 10px;
+          }
+      }
+
         &:first-child {
             margin-left: 0px;
           }
@@ -35,6 +48,11 @@
       
         transition: color 250ms $cubik;
 
+        @media screen and(min-width:768px) and(max-width:1199px) {
+          margin-left: 0;
+          font-size: 12px;
+         }
+
         &:hover,
         &:focus {
             color: $secondaryColor;
@@ -53,7 +71,7 @@
               }
           }
       }  
-  }
+}
 
 
   .icon-header-mail {

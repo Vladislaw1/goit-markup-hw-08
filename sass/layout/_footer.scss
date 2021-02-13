@@ -125,7 +125,7 @@
      & .container{
        display: flex;
        flex-wrap: wrap;
-       max-width: 100%;
+       width: 100%;
      }
 
      .footer-container-left {
@@ -148,3 +148,28 @@
    }
  }
  }
+@media screen and (min-width:1200px){
+  .footer{
+    width: 100%;
+
+    & .container{
+      max-width: 1200px;
+    }
+
+    .footer-container-left {
+       margin-right: 30px;
+       flex-basis: calc((50% - 45px) / 2);
+     }
+    
+     .footer-container-center {
+       margin-right: 30px;
+       flex-basis: calc((50% - 45px) / 2);
+      margin-top: 0;
+     }
+    
+     .footer-container-right {
+       flex-basis: calc(50% - 15px);
+   }
+  }
+
+} 

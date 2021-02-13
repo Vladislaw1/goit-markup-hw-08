@@ -6,11 +6,16 @@
         font-weight: 700;
         line-height: 1.193;
         letter-spacing: 0.03em;
-      
+        align-items: center;
         text-decoration: none;
         display: flex;
 
         margin-right: 93px;
+
+        @media screen and(min-width:768px) and (max-width:1199px) {
+            margin-right: 88px;
+            font-size: 24px;
+        }
       }
 }
  .footer {

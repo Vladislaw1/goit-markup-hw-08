@@ -4,9 +4,14 @@
     position: relative;
   
     & .container {
+      max-width: 100%;
         display: flex;
         justify-content: space-between;
       }
+
+    @media screen and(min-width:768px) and(max-width:1199px){
+      padding: 21px 0;
+    } 
 }
   .nav {
     margin-right: auto;
